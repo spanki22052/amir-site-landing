@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import "./mainpage.scss";
 import { CSSTransition } from "react-transition-group";
 import { Navbar } from "@/features/Navbar";
+//@ts-expect-error dfs
 import ReactCardCarousel from "react-card-carousel";
 
 const Mainpage = () => {
