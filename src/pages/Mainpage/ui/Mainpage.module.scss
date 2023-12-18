@@ -1,0 +1,110 @@
+.Mainpage {
+  width: 100vw;
+  min-height: 100vh;
+
+  position: relative;
+
+  background: #faf6f0;
+
+  .logo {
+    border-radius: 100%;
+  }
+
+  .mainpageWrapper {
+    padding: 20px 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .rightSide {
+      flex: 1;
+      position: relative;
+      min-height: 600px;
+
+      .videosLayout {
+        font-size: 24px;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      .videoInfo {
+        padding: 10px;
+
+        .videoLayout {
+          font-size: 16px;
+          font-weight: 500;
+          color: var(--color-primary);
+        }
+
+        .videoWatches {
+          font-size: 16px;
+          font-weight: 600;
+          text-align: right;
+          color: var(--color-primary);
+        }
+
+        .watchItLink {
+          display: block;
+          padding-top: 20px;
+          width: 100%;
+          text-align: right;
+          text-decoration: none;
+          color: var(--color-primary);
+        }
+      }
+
+      .videoContainer {
+        width: 200px;
+        height: 280px;
+        background: var(--color-dark-primary);
+
+        border-radius: 20px;
+
+        img {
+          width: 100%;
+          object-fit: contain;
+
+          border-radius: 20px 20px 0 0;
+        }
+      }
+    }
+
+    .leftSide {
+      flex: 1;
+      .nameLayout {
+        font-size: 40px;
+        font-weight: 600;
+
+        color: var(--color-dark);
+      }
+
+      .welcomeLayout {
+        font-size: 28px;
+        font-weight: 500;
+
+        color: var(--color-dark);
+      }
+
+      .infoContainer {
+        padding-top: 20px;
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--color-dark);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Mainpage {
+    .mainpageWrapper {
+      padding: 20px !important;
+      gap: 50px;
+      flex-direction: column !important;
+
+      .nameLayout {
+        font-size: 30px !important;
+      }
+    }
+  }
+}
